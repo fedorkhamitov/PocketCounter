@@ -1,0 +1,6 @@
+﻿services:
+  pocketcounter.api:
+    image: pocketcounter.api
+    build:
+      context: .
+      dockerfile: src/PocketCounter.Api/Dockerfile

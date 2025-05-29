@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketCounter.Api", "src\PocketCounter.Api\PocketCounter.Api.csproj", "{5DE2C0A2-EA4E-4F4B-BC14-BC2222AD6030}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketCounter.Infrastructure", "src\PocketCounter.Infrastructure\PocketCounter.Infrastructure.csproj", "{D9C21417-99AB-441A-A1FF-325447D0DC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketCounter.Domain", "src\PocketCounter.Domain\PocketCounter.Domain.csproj", "{910C8B20-5937-49E2-85B9-9E88F1C25074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketCounter.Application", "src\PocketCounter.Application\PocketCounter.Application.csproj", "{3CEEEDA6-9F3D-4503-BE47-FF42CD0C5A62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F1115BB-0CA4-4FE7-B657-7BA7A16258FB}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocketCounter.Infrastructure.Authentication", "src\PocketCounter.Infrastructure.Authentication\PocketCounter.Infrastructure.Authentication.csproj", "{3C2D1FAA-2498-48DC-A91A-71F14690914E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DE2C0A2-EA4E-4F4B-BC14-BC2222AD6030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE2C0A2-EA4E-4F4B-BC14-BC2222AD6030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE2C0A2-EA4E-4F4B-BC14-BC2222AD6030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE2C0A2-EA4E-4F4B-BC14-BC2222AD6030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C21417-99AB-441A-A1FF-325447D0DC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C21417-99AB-441A-A1FF-325447D0DC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C21417-99AB-441A-A1FF-325447D0DC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C21417-99AB-441A-A1FF-325447D0DC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910C8B20-5937-49E2-85B9-9E88F1C25074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910C8B20-5937-49E2-85B9-9E88F1C25074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910C8B20-5937-49E2-85B9-9E88F1C25074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910C8B20-5937-49E2-85B9-9E88F1C25074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CEEEDA6-9F3D-4503-BE47-FF42CD0C5A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEEEDA6-9F3D-4503-BE47-FF42CD0C5A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CEEEDA6-9F3D-4503-BE47-FF42CD0C5A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEEEDA6-9F3D-4503-BE47-FF42CD0C5A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2D1FAA-2498-48DC-A91A-71F14690914E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2D1FAA-2498-48DC-A91A-71F14690914E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2D1FAA-2498-48DC-A91A-71F14690914E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2D1FAA-2498-48DC-A91A-71F14690914E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿services:
+  postgres:
+    container_name: postgres_for_pocket_counter
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db_pocket_counter
+    ports:
+      - 5435:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  postgres-auth:
+    container_name: postgres_for_pocket_counter-auth
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db_pocket_counter_auth
+    ports:
+      - 5436:5432
+    volumes:
+      - postgres-data-auth:/var/lib/postgresql/data
+volumes:
+  postgres-data:
+  postgres-data-auth:

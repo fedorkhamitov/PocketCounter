@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PocketCounter.Domain/1.0.0": {
+        "dependencies": {
+          "CSharpFunctionalExtensions": "3.6.0",
+          "libphonenumber-csharp": "9.0.5"
+        },
+        "runtime": {
+          "PocketCounter.Domain.dll": {}
+        }
+      },
+      "CSharpFunctionalExtensions/3.6.0": {
+        "runtime": {
+          "lib/net8.0/CSharpFunctionalExtensions.dll": {
+            "assemblyVersion": "3.6.0.0",
+            "fileVersion": "3.6.0.0"
+          }
+        }
+      },
+      "libphonenumber-csharp/9.0.5": {
+        "runtime": {
+          "lib/net9.0/PhoneNumbers.dll": {
+            "assemblyVersion": "9.0.5.0",
+            "fileVersion": "9.0.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PocketCounter.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpFunctionalExtensions/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c+oWbfDKKjpOLPMxn/iPn1GL24YTJMtOiGfj0AsDKZ2v6/Mr6V7BfzfWLg6KqNRx3KRy3KcQE680SwvDTI/jcg==",
+      "path": "csharpfunctionalextensions/3.6.0",
+      "hashPath": "csharpfunctionalextensions.3.6.0.nupkg.sha512"
+    },
+    "libphonenumber-csharp/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CZFvUbdLGVhNMDtRQ/Vd4hCjpj0zYsnbqVhlpg/Fwota2P6YxDCN4kAOE4tC4AZpNPuHVST0pn5glT/Bza4qew==",
+      "path": "libphonenumber-csharp/9.0.5",
+      "hashPath": "libphonenumber-csharp.9.0.5.nupkg.sha512"
+    }
+  }
+}

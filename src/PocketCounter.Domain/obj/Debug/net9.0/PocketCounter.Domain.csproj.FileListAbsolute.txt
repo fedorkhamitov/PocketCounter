@@ -1,0 +1,12 @@
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\bin\Debug\net9.0\PocketCounter.Domain.deps.json
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\bin\Debug\net9.0\PocketCounter.Domain.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\bin\Debug\net9.0\PocketCounter.Domain.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.csproj.AssemblyReference.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.AssemblyInfoInputs.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.AssemblyInfo.cs
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.csproj.CoreCompileInputs.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\refint\PocketCounter.Domain.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\ref\PocketCounter.Domain.dll

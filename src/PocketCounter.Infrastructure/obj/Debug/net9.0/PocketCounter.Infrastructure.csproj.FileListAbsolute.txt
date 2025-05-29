@@ -1,0 +1,17 @@
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Infrastructure.deps.json
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Infrastructure.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Infrastructure.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Application.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Domain.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Application.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\bin\Debug\net9.0\PocketCounter.Domain.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.csproj.AssemblyReference.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.AssemblyInfoInputs.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.AssemblyInfo.cs
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.csproj.CoreCompileInputs.cache
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCo.143A7137.Up2Date
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\refint\PocketCounter.Infrastructure.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.pdb
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\ref\PocketCounter.Infrastructure.dll
