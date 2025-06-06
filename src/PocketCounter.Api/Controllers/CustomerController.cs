@@ -9,6 +9,8 @@ using PocketCounter.Application.Customers.Orders.Create;
 using PocketCounter.Application.Customers.Update;
 using PocketCounter.Application.Customers.Orders.Delete;
 using PocketCounter.Application.Customers.Orders.Update;
+using PocketCounter.Application.Customers.Queries.GetCustomersList;
+using PocketCounter.Application.Dtos;
 
 namespace PocketCounter.Api.Controllers;
 
@@ -140,6 +142,16 @@ public class CustomerController : ControllerBase
         CancellationToken cancellationToken)
     {
         var result = await handler.Handle(id, orderId, request, cancellationToken);
+
+        return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
+    }
+    
+    [HttpGet("all")]
+    public async Task<ActionResult<List<CustomerDto>>> GetAllCategories(
+        [FromServices] GetCustomersListHandler handler,
+        CancellationToken cancellationToken)
+    {
+        var result = await handler.Handle(cancellationToken);
 
         return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
     }

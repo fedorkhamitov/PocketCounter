@@ -15,3 +15,4 @@ D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\refint\PocketCounter.Infrastructure.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.pdb
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\ref\PocketCounter.Infrastructure.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure\obj\Debug\net9.0\PocketCounter.Infrastructure.sourcelink.json

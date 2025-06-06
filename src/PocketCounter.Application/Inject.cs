@@ -6,6 +6,7 @@ using PocketCounter.Application.Categories.Delete;
 using PocketCounter.Application.Categories.Products.Create;
 using PocketCounter.Application.Categories.Products.Delete;
 using PocketCounter.Application.Categories.Products.Update;
+using PocketCounter.Application.Categories.Queries.GetCategoriesList;
 using PocketCounter.Application.Categories.Queries.GetCategoriesWithPagination;
 using PocketCounter.Application.Categories.Update;
 using PocketCounter.Application.Customers.Create;
@@ -14,6 +15,7 @@ using PocketCounter.Application.Customers.Orders.Create;
 using PocketCounter.Application.Customers.Orders.Delete;
 using PocketCounter.Application.Customers.Orders.Update;
 using PocketCounter.Application.Customers.Queries;
+using PocketCounter.Application.Customers.Queries.GetCustomersList;
 using PocketCounter.Application.Customers.Update;
 
 namespace PocketCounter.Application;
@@ -43,6 +45,8 @@ public static class Inject
         services.AddScoped<GetCustomersWithPaginationHandler>();
         services.AddScoped<RegisterUserHandler>();
         services.AddScoped<LoginUserHandler>();
+        services.AddScoped<GetCategoriesListHandler>();
+        services.AddScoped<GetCustomersListHandler>();
         
         services.AddValidatorsFromAssembly(typeof(Inject).Assembly);
         return services;

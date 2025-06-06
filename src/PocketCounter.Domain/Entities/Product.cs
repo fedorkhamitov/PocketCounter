@@ -79,10 +79,10 @@ public class Product : SoftDeletableEntity
 
     public UnitResult<Error> UpdateDimensions(Dimensions dimensions, double weigth)
     {
-        if (dimensions.Width >= 0 || dimensions.Height >= 0 || dimensions.Depth >= 0)
+        if (dimensions.Width <= 0 || dimensions.Height <= 0 || dimensions.Depth <= 0)
             return Errors.General.ValueIsInvalid("dimensions");
         
-        if (weigth >= 0)
+        if (weigth <= 0)
             return Errors.General.ValueIsInvalid("weigth");
 
         Dimensions = dimensions;

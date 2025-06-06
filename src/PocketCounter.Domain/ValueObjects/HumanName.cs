@@ -21,19 +21,15 @@ public record HumanName
         FamilyName = familyName;
     }
 
-    public static Result<HumanName, Error> Create(string firstName, string patronymic, string familyName)
+    public static Result<HumanName, Error> Create(string firstName, string familyName, string patronymic = "")
     {
         if (string.IsNullOrWhiteSpace(firstName))
             return Errors.General.ValueIsRequired("First Name");
-        if (string.IsNullOrWhiteSpace(patronymic))
-            return Errors.General.ValueIsRequired("Patronymic");
         if (string.IsNullOrWhiteSpace(familyName) || !familyName.IsValidHumanName())
             return Errors.General.ValueIsRequired("Family Name");
 
         if (!firstName.IsValidHumanName())
             return Errors.General.ValueIsInvalid("First Name");
-        if (!patronymic.IsValidHumanName())
-            return Errors.General.ValueIsInvalid("Patronymic");
         if (!familyName.IsValidHumanName())
             return Errors.General.ValueIsInvalid("Family Name");
 
@@ -42,6 +38,8 @@ public record HumanName
 
     public override string ToString()
     {
+        if (string.IsNullOrWhiteSpace(Patronymic))
+            return FirstName + " " + FamilyName;
         return FirstName + " " + Patronymic + " " + FamilyName;
     }
 }

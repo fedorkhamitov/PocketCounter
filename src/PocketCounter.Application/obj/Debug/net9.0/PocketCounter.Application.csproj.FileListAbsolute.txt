@@ -13,3 +13,4 @@ D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Application\ob
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Application\obj\Debug\net9.0\refint\PocketCounter.Application.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Application\obj\Debug\net9.0\PocketCounter.Application.pdb
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Application\obj\Debug\net9.0\ref\PocketCounter.Application.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Application\obj\Debug\net9.0\PocketCounter.Application.sourcelink.json

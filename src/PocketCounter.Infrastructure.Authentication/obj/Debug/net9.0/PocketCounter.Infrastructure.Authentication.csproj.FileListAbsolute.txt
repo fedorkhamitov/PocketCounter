@@ -17,3 +17,4 @@ D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure.Authentication\obj\Debug\net9.0\refint\PocketCounter.Infrastructure.Authentication.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure.Authentication\obj\Debug\net9.0\PocketCounter.Infrastructure.Authentication.pdb
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure.Authentication\obj\Debug\net9.0\ref\PocketCounter.Infrastructure.Authentication.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Infrastructure.Authentication\obj\Debug\net9.0\PocketCounter.Infrastructure.Authentication.sourcelink.json

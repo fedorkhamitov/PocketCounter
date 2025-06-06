@@ -1,5 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 using Microsoft.Extensions.Logging;
+using PocketCounter.Application.Database;
 using PocketCounter.Domain.Share;
 using PocketCounter.Domain.ValueObjects;
 
@@ -7,6 +8,7 @@ namespace PocketCounter.Application.Customers.Orders.Update;
 
 public class UpdateOrderCartLinesHandler(
     ICustomerRepository customerRepository,
+    IReadDbContext readDbContext,
     ILogger<UpdateOrderCartLinesHandler> logger)
 {
     public async Task<Result<Guid, Error>> Handle(
@@ -48,11 +50,26 @@ public class UpdateOrderCartLinesHandler(
             }
         }
 
+        orderResult.Value.SetTotalPrice(NewTotalPrice(orderResult.Value.CartLines.ToArray()));
+
         var customerIdResult = await customerRepository.Save(customer, cancellationToken);
         
         logger.LogInformation("Updated cart lines for order id: {0} from customer id: {1}", 
             orderResult.Value.Id, customerIdResult);
         
         return orderResult.Value.Id;
+    }
+
+    private decimal NewTotalPrice(CartLine[] cartLines)
+    {
+        var products = readDbContext.Products
+            .Where(p => cartLines.Select(c => c.ProductId).ToArray().Contains(p.Id))
+            .ToList();
+
+        var result = (from product in products 
+            let quantity = cartLines.FirstOrDefault(c => c.ProductId == product.Id)!.Quantity 
+            select product.Price * quantity).Sum();
+        
+        return result;
     }
 }

@@ -31,6 +31,15 @@ public class Program
             .CreateLogger();
         
         builder.Services.AddSerilog();
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("ForSpecialFrontend", cpBuilder =>
+            {
+                cpBuilder.WithOrigins("http://localhost:5173")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(opt =>
@@ -73,6 +82,8 @@ public class Program
         var app = builder.Build();
         
         app.UseSerilogRequestLogging();
+        
+        app.UseCors("ForSpecialFrontend");
         
         app.UseExceptionMiddleware();
         

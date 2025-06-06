@@ -42,21 +42,21 @@ public record Address
     }
 
     public static Result<Address, Error> Create(
-        string zipCode,
-        string country,
-        string state,
-        string city,
+        string zipCode = "",
+        string country = "",
+        string state = "",
+        string city = "",
         string streetName = "",
         string streetNumber = "",
         string apartment = "",
         string specialAddressString = ""
     )
     {
-        if (string.IsNullOrWhiteSpace(streetName) &&
+        /*if (string.IsNullOrWhiteSpace(streetName) &&
             string.IsNullOrWhiteSpace(streetNumber) &&
             string.IsNullOrWhiteSpace(apartment) &&
             string.IsNullOrWhiteSpace(specialAddressString))
-            return Errors.General.ValueIsRequired("Special Address String with ect. props");
+            return Errors.General.ValueIsRequired("Special Address String with ect. props");*/
         
         return new Address(
             zipCode,

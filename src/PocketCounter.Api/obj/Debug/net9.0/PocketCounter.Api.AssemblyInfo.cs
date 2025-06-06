@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PocketCounter.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30963ef57f1532ef3ebf2415ee3377c315a7e4c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PocketCounter.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PocketCounter.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -54,10 +54,10 @@ public static class Inject
         
         services.AddScoped<AuthorizationDbContext>();
 
-        services.AddAuthorization(options =>
+        /*services.AddAuthorization(options =>
         {
             options.DefaultPolicy = new AuthorizationPolicyBuilder()
-                .RequireClaim(ClaimTypes.Role, "User")
+                //.RequireClaim(ClaimTypes.Role, "User")
                 .RequireAuthenticatedUser()
                 .Build();
             
@@ -65,7 +65,7 @@ public static class Inject
             {
                 policy.AddRequirements(new CreateIssueRequirement("Issue"));
             });
-        });
+        });*/
 
         services.AddSingleton<IAuthorizationHandler, CreateIssueRequirementHandler>();
         

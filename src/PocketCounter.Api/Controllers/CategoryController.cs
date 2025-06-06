@@ -8,7 +8,10 @@ using PocketCounter.Application.Categories.Delete;
 using PocketCounter.Application.Categories.Products.Create;
 using PocketCounter.Application.Categories.Products.Delete;
 using PocketCounter.Application.Categories.Products.Update;
+using PocketCounter.Application.Categories.Queries.GetCategoriesList;
 using PocketCounter.Application.Categories.Update;
+using PocketCounter.Application.Dtos;
+using PocketCounter.Domain.Entities;
 
 namespace PocketCounter.Api.Controllers;
 
@@ -181,6 +184,16 @@ public class CategoryController : ControllerBase
             return BadRequest(validationResult.ValidationResultErrorEnvelope());
         
         var result = await handler.Handle(id, productId, request, cancellationToken);
+
+        return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
+    }
+
+    [HttpGet("all")]
+    public async Task<ActionResult<List<CategoryDto>>> GetAllCategories(
+        [FromServices] GetCategoriesListHandler handler,
+        CancellationToken cancellationToken)
+    {
+        var result = await handler.Handle(cancellationToken);
 
         return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
     }

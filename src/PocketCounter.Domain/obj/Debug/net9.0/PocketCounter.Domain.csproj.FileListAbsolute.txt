@@ -10,3 +10,4 @@ D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Deb
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\refint\PocketCounter.Domain.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.pdb
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\ref\PocketCounter.Domain.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Domain\obj\Debug\net9.0\PocketCounter.Domain.sourcelink.json

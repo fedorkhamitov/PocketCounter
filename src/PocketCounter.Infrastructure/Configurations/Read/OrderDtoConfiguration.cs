@@ -28,7 +28,7 @@ public class OrderDtoConfiguration : IEntityTypeConfiguration<OrderDto>
 
         builder.Property(o => o.CartLines)
             .HasColumnName("cart_lines")
-            .HasColumnType("jsonb")
+            //.HasColumnType("jsonb")
             .HasConversion(
                 v => JsonSerializer.Serialize(v, new JsonSerializerOptions
                 {

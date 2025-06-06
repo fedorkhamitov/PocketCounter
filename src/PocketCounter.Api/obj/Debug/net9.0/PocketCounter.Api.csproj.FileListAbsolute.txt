@@ -187,3 +187,4 @@ D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Api\bin\Debug\
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\projects\PocketCounter\PocketCounter.Backend\src\PocketCounter.Api\obj\Debug\net9.0\PocketCounter.Api.sourcelink.json

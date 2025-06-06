@@ -27,5 +27,6 @@ public class CartLine : ValueObject
     protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return ProductId;
+        yield return Quantity;
     }
 }

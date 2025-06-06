@@ -16,8 +16,8 @@ public class UpdateCustomerHandler(ICustomerRepository customerRepository, ILogg
 
         var fullName = HumanName.Create(
             request.FullName.FirstName,
-            request.FullName.Patronymic,
-            request.FullName.FamilyName);
+            request.FullName.FamilyName,
+            request.FullName.Patronymic);
         if (fullName.IsFailure)
             return fullName.Error;
 

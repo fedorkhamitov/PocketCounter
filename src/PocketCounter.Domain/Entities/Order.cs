@@ -1,4 +1,5 @@
-﻿using CSharpFunctionalExtensions;
+﻿using System.Runtime.InteropServices.JavaScript;
+using CSharpFunctionalExtensions;
 using PocketCounter.Domain.Share;
 using PocketCounter.Domain.ValueObjects;
 
@@ -12,6 +13,7 @@ public class Order : SoftDeletableEntity
 
     public Order(
         List<CartLine> cartLines,
+        SerialNumber serialNumber,
         Address address,
         decimal totalPrice,
         string comment)
@@ -24,6 +26,7 @@ public class Order : SoftDeletableEntity
         CreateDateTime = DateTime.UtcNow;
         Comment = comment;
         TotalPrice = totalPrice;
+        SerialNumber = serialNumber;
     }
 
     public new Guid Id { get; private set; }
@@ -31,6 +34,8 @@ public class Order : SoftDeletableEntity
     public IReadOnlyList<CartLine> CartLines => _cartLines;
 
     private readonly List<CartLine> _cartLines = [];
+    
+    public SerialNumber SerialNumber { get; private set; }
 
     public Address Address { get; private set; } = default!;
 
@@ -46,6 +51,16 @@ public class Order : SoftDeletableEntity
 
     // --- Methods ---
 
+    public UnitResult<Error> SetTotalPrice(decimal newTotalPrice)
+    {
+        if (newTotalPrice <= 0)
+            return Errors.General.ValueIsInvalid(nameof(newTotalPrice));
+        
+        TotalPrice = newTotalPrice;
+        return Result.Success<Error>();
+    }
+    public void SetSerialNumber(SerialNumber serialNumber) => SerialNumber = serialNumber;
+
     public UnitResult<Error> AddCartLine(CartLine cartLine)
     {
         if (cartLine.Quantity < 0)
@@ -53,8 +68,10 @@ public class Order : SoftDeletableEntity
 
         var existingLine = _cartLines
             .FirstOrDefault(cl => cl.ProductId == cartLine.ProductId);
+        if (existingLine is not null && cartLine.Quantity > existingLine.Quantity)
+            return Errors.General.ValueIsInvalid(nameof(cartLine.Quantity));
 
-        if (existingLine != null)
+        if (existingLine is not null)
         {
             var newQuantity = existingLine.Quantity + cartLine.Quantity;
             var newLineResult = CartLine.Create(existingLine.ProductId, newQuantity);
@@ -75,8 +92,32 @@ public class Order : SoftDeletableEntity
 
     public UnitResult<Error> RemoveCartLine(CartLine cartLine)
     {
-        _cartLines.Remove(cartLine);
+        if (cartLine.Quantity < 0)
+            return Errors.General.ValueIsInvalid(nameof(cartLine.Quantity));
+
+        var existingLine = _cartLines
+            .FirstOrDefault(cl => cl.ProductId == cartLine.ProductId);
         
+        if (existingLine is not null && cartLine.Quantity > existingLine.Quantity)
+            return Errors.General.ValueIsInvalid(nameof(cartLine.Quantity));
+        
+        if (existingLine is not null && existingLine.Quantity == cartLine.Quantity)
+        {
+            _cartLines.Remove(cartLine);
+            return Result.Success<Error>();
+        }
+
+        if (existingLine is null) return Result.Success<Error>();
+        
+        var newQuantity = existingLine.Quantity - cartLine.Quantity;
+        var newLineResult = CartLine.Create(existingLine.ProductId, newQuantity);
+        
+        if (newLineResult.IsFailure)
+            return newLineResult.Error;
+
+        var index = _cartLines.IndexOf(existingLine);
+        _cartLines[index] = newLineResult.Value;
+
         return Result.Success<Error>();
     }
 

@@ -28,6 +28,7 @@ public class ReadDbContext(IConfiguration configuration) : DbContext, IReadDbCon
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        //modelBuilder.Entity<ProductDto>().HasQueryFilter(p => p.)
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(WriteDbContext).Assembly,
             type => type.FullName?.Contains("Configurations.Read") ?? false);
     }

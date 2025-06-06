@@ -1,6 +1,7 @@
 ﻿using CSharpFunctionalExtensions;
 using Microsoft.Extensions.Logging;
 using PocketCounter.Application.Categories;
+using PocketCounter.Application.Database;
 using PocketCounter.Domain.Entities;
 using PocketCounter.Domain.Share;
 using PocketCounter.Domain.ValueObjects;
@@ -10,6 +11,7 @@ namespace PocketCounter.Application.Customers.Orders.Create;
 public class CreateOrderHandler(
     ICustomerRepository customerRepository,
     ICategoryRepository categoryRepository,
+    IReadDbContext readDbContext,
     ILogger<CreateOrderHandler> logger)
 {
     public async Task<Result<Guid, Error>> Handle(
@@ -46,9 +48,16 @@ public class CreateOrderHandler(
                 return Errors.General.NotFound(cartLine.ProductId);
             totalPrice += product.Value.GetTotalPriceForOrderQuantity(cartLine.Quantity).Value;
         }
+
+        var ordersCount = readDbContext.Orders.Count();
+        
+        var serialNumber = SerialNumber.Create(ordersCount + 1);
+        if (serialNumber.IsFailure)
+            return serialNumber.Error;
         
         var order = new Order(
             cartLines,
+            serialNumber.Value,
             addressResult.Value,
             totalPrice,
             request.Comment);

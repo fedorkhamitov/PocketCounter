@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PocketCounter.Api.Controllers.Requests;
 using PocketCounter.Api.Response;
 using PocketCounter.Application.Categories.Queries.GetCategoriesWithPagination;
@@ -11,6 +12,7 @@ namespace PocketCounter.Api.Controllers;
 [Route("product")]
 public class ProductController
 {
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<Envelope<PagedList<ProductDto>>>> Get(
         [FromQuery] GetProductsWithPaginationRequest request,

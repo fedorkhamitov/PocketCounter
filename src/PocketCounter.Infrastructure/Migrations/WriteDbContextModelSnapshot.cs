@@ -134,6 +134,10 @@ namespace PocketCounter.Infrastructure.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("is_paid");
 
+                    b.Property<int>("SerialNumber")
+                        .HasColumnType("integer")
+                        .HasColumnName("serial_number");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("text")

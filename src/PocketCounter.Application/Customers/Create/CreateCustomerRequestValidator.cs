@@ -10,7 +10,7 @@ public class CreateCustomerRequestValidator : AbstractValidator<CreateCustomerRe
     {
         RuleFor(r => r.FullName)
             .MustBeValueObject(n =>
-                HumanName.Create(n.FirstName, n.Patronymic, n.FamilyName));
+                HumanName.Create(n.FirstName, n.FamilyName, n.Patronymic));
 
         RuleFor(r => r.PhoneNumber)
             .MustBeValueObject<CreateCustomerRequest, string, PhoneNumber>(p =>

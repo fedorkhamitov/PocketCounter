@@ -19,8 +19,8 @@ public class AccountController : ControllerBase
         CancellationToken cancellationToken
     )
     {
-        if (request.Email != "polina.khamitova1219@gmail.com" || request.Email != "polianna1219@gmail.com")
-                 return BadRequest(Error.Authentication("user.not.valid","This user cannot to register."));
+        /*if (request.Email != "polina.khamitova1219@gmail.com" && request.Email != "polianna1219@gmail.com")
+                 return BadRequest(Error.Authentication("user.not.valid","This user cannot to register."));*/
         
         var command = new RegisterUserCommand(request.Email, request.UserName, request.Password);
         

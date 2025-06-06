@@ -58,7 +58,7 @@ public class CustomerRepository(WriteDbContext context) : ICustomerRepository
 
         return customer.Id;
     }
-    
+
     public async Task<Result<Order, Error>> GetOrderById(Guid id, CancellationToken cancellationToken)
     {
         var customers = await context.Customers
