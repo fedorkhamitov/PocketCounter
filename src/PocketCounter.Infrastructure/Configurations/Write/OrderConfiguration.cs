@@ -27,8 +27,11 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
                     l => l.Aggregate(0, (current, value) => HashCode.Combine(current, value.GetHashCode())),
                     l => l.ToList()));
 
-        builder.Property(o => o.SerialNumber)
-            .HasConversion(sn => sn.Value, value => SerialNumber.Create(value).Value);
+        /*builder.Property(o => o.SerialNumber)
+            .HasConversion(sn => sn.Value, value => SerialNumber.Create(value).Value);*/
+        
+        builder.Property(o => o.OrderNumber)
+            .HasDefaultValueSql("nextval('\"OrderNumbers\"')");
         
         builder.OwnsOne(o => o.Address, b =>
         {

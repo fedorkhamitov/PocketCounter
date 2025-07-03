@@ -23,6 +23,8 @@ namespace PocketCounter.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.HasSequence<int>("OrderNumbers");
+
             modelBuilder.Entity("PocketCounter.Domain.Entities.Category", b =>
                 {
                     b.Property<Guid>("Id")
@@ -134,9 +136,11 @@ namespace PocketCounter.Infrastructure.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("is_paid");
 
-                    b.Property<int>("SerialNumber")
+                    b.Property<int>("OrderNumber")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("serial_number");
+                        .HasColumnName("order_number")
+                        .HasDefaultValueSql("nextval('\"OrderNumbers\"')");
 
                     b.Property<string>("Status")
                         .IsRequired()

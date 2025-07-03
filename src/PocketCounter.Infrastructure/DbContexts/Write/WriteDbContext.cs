@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using PocketCounter.Domain.Entities;
 using PocketCounter.Domain.Share;
+using PocketCounter.Infrastructure.Configurations.Write;
 
 namespace PocketCounter.Infrastructure.DbContexts.Write;
 
@@ -22,6 +23,12 @@ public class WriteDbContext(IConfiguration configuration) : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(WriteDbContext).Assembly,
             type => type.FullName?.Contains("Configurations.Write") ?? false);
+        
+        modelBuilder.HasSequence<int>("OrderNumbers")
+            .StartsAt(1)
+            .IncrementsBy(1);
+        
+        modelBuilder.ApplyConfiguration(new OrderConfiguration());
     }
 
     private ILoggerFactory CreateLoggerFactory() =>

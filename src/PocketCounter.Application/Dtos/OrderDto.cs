@@ -5,7 +5,8 @@ namespace PocketCounter.Application.Dtos;
 public class OrderDto
 {
     public Guid Id { get; init; }
-    public int SerialNumber { get; init; }
+    //public int SerialNumber { get; init; }
+    public int OrderNumber { get; init; }
     public AddressDto Address { get; init; } = default!;
     public DateTime CreateDateTime { get; init; }
     public string Comment { get; init; } = string.Empty;

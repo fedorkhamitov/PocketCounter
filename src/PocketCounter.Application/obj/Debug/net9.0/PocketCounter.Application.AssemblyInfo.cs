@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PocketCounter.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30963ef57f1532ef3ebf2415ee3377c315a7e4c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae4e812d40398db38190700b9bc9820fd66b91f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PocketCounter.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PocketCounter.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

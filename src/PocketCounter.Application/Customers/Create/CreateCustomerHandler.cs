@@ -17,11 +17,21 @@ public class CreateCustomerHandler(ICustomerRepository categoryRepository, ILogg
         if (fullName.IsFailure)
             return fullName.Error;
 
-        var phoneNumber = PhoneNumber.Create(request.PhoneNumber);
-        if (phoneNumber.IsFailure)
-            return phoneNumber.Error;
-        var customer = new Customer(fullName.Value, phoneNumber.Value);
-       
+        Customer customer;
+        
+        if (request.PhoneNumber != "")
+        {
+            var phoneNumber = PhoneNumber.Create(request.PhoneNumber);
+            if (phoneNumber.IsFailure)
+                return phoneNumber.Error;
+            
+            customer = new Customer(fullName.Value, phoneNumber.Value);
+        }
+        else
+        {
+            customer = new Customer(fullName.Value, PhoneNumber.Create(string.Empty).Value);
+        }
+        
         var result = await categoryRepository.Add(customer, cancellationToken);
         if (result.IsFailure)
             return result.Error;

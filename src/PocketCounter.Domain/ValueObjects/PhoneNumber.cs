@@ -42,7 +42,7 @@ public class PhoneNumber : ValueObject
     public static Result<PhoneNumber, Error> Create(string phoneNumber, string regionCode = "RU")
     {
         if (string.IsNullOrWhiteSpace(phoneNumber))
-            return Errors.General.ValueIsRequired("phoneNumber");
+            return new PhoneNumber("","","","", PhoneNumberType.MOBILE);
 
         try
         {

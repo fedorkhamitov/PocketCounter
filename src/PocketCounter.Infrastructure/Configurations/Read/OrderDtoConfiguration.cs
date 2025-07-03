@@ -12,6 +12,8 @@ public class OrderDtoConfiguration : IEntityTypeConfiguration<OrderDto>
         builder.ToTable("orders");
 
         builder.HasKey(o => o.Id);
+        
+        builder.Property(o => o.OrderNumber).HasColumnName("order_number");
 
         builder.Property(o => o.Address)
             .HasColumnName("address")

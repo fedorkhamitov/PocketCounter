@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PocketCounter.Api.Extensions;
 using PocketCounter.Api.Response;
+using PocketCounter.Application.Categories.Products.Update;
 using PocketCounter.Application.Customers.Create;
 using PocketCounter.Application.Customers.Delete;
 using PocketCounter.Application.Customers.Orders.Create;
@@ -116,7 +117,7 @@ public class CustomerController : ControllerBase
     }
 
     [HttpPut("{id:guid}/order/{orderId:guid}/cartlines")]
-    public async Task<ActionResult<Guid>> DeleteOrder(
+    public async Task<ActionResult<Guid>> UpdateOrderCartLines(
         [FromRoute] Guid id,
         [FromRoute] Guid orderId,
         [FromServices] UpdateOrderCartLinesHandler handler,
@@ -134,7 +135,7 @@ public class CustomerController : ControllerBase
     }
     
     [HttpPut("{id:guid}/order/{orderId:guid}/status")]
-    public async Task<ActionResult<Guid>> DeleteOrder(
+    public async Task<ActionResult<Guid>> UpdateOrderStatus(
         [FromRoute] Guid id,
         [FromRoute] Guid orderId,
         [FromServices] UpdateOrderStatusHandler handler,
@@ -152,6 +153,24 @@ public class CustomerController : ControllerBase
         CancellationToken cancellationToken)
     {
         var result = await handler.Handle(cancellationToken);
+
+        return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
+    }
+    
+    [HttpPut("{id:guid}/order/{orderId:guid}/address")]
+    public async Task<ActionResult<Guid>> UpdateOrderAddress(
+        [FromRoute] Guid id,
+        [FromRoute] Guid orderId,
+        [FromServices] UpdateOrderAddressHandler handler,
+        [FromBody] UpdateOrderAddressRequest request,
+        [FromServices] IValidator<UpdateOrderAddressRequest> validator,
+        CancellationToken cancellationToken)
+    {
+        var validationResult = await validator.ValidateAsync(request, cancellationToken);
+        if (validationResult.IsValid == false)
+            return BadRequest(validationResult.ValidationResultErrorEnvelope());
+
+        var result = await handler.Handle(id, orderId, request, cancellationToken);
 
         return result.IsFailure ? result.Error.ToResponse() : Ok(Envelope.Ok(result.Value));
     }

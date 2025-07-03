@@ -47,6 +47,7 @@ public static class Inject
         services.AddScoped<LoginUserHandler>();
         services.AddScoped<GetCategoriesListHandler>();
         services.AddScoped<GetCustomersListHandler>();
+        services.AddScoped<UpdateOrderAddressHandler>();
         
         services.AddValidatorsFromAssembly(typeof(Inject).Assembly);
         return services;

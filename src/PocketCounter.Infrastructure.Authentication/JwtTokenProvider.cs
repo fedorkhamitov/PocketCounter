@@ -1,7 +1,6 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using PocketCounter.Application.Authorization;
@@ -27,8 +26,7 @@ public class JwtTokenProvider : ITokenProvider
         Claim[] claims =
         [
             new Claim(CustomClaims.Sub, user.Id.ToString()),
-            new Claim(CustomClaims.Email, user.Email ?? "")/*,
-            new Claim(ClaimTypes.Role, )*/
+            new Claim(CustomClaims.Email, user.Email ?? "")
         ];
         var jwtToken = new JwtSecurityToken(
             issuer: _jwtOptions.Issuer,

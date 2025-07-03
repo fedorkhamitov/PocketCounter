@@ -10,7 +10,7 @@ public class CreateProductRequestValidator : AbstractValidator<CreateProductRequ
     {
         RuleFor(request => request.Sku).MustBeValueObject(s => Sku.Create(s));
         
-        RuleFor(request => request.Title).MustBeValueObject(t => Title.Create(t));
+        RuleFor(request => request.Title).MustBeValueObject(Title.Create);
         
         RuleFor(request => request.Description).MustBeValueObject(d => Description.Create(d));
         
@@ -24,16 +24,16 @@ public class CreateProductRequestValidator : AbstractValidator<CreateProductRequ
             .WithError("CostPrice");
 
         RuleFor(x => x.Width)
-            .NotEmpty().WithError("Width");
+            .GreaterThanOrEqualTo(0).WithError("Width");
 
         RuleFor(x => x.Height)
-            .NotEmpty().WithError("Height");
+            .GreaterThanOrEqualTo(0).WithError("Height");
 
         RuleFor(x => x.Depth)
-            .NotEmpty().WithError("Depth");
+            .GreaterThanOrEqualTo(0).WithError("Depth");
 
         RuleFor(x => x.Weigth)
-            .GreaterThan(0).WithError("Weigth");
+            .GreaterThanOrEqualTo(0).WithError("Weigth");
 
         RuleFor(x => x.QuantityForShipping)
             .GreaterThanOrEqualTo(0).WithError("QuantityForShipping");

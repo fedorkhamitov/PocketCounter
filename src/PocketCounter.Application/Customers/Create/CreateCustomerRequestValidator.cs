@@ -12,8 +12,12 @@ public class CreateCustomerRequestValidator : AbstractValidator<CreateCustomerRe
             .MustBeValueObject(n =>
                 HumanName.Create(n.FirstName, n.FamilyName, n.Patronymic));
 
-        RuleFor(r => r.PhoneNumber)
+        /*RuleFor(r => r.PhoneNumber)
             .MustBeValueObject<CreateCustomerRequest, string, PhoneNumber>(p =>
-                PhoneNumber.Create(p));
+                PhoneNumber.Create(p));*/
+        
+        RuleFor(r => r.PhoneNumber)
+            .MustBeValueObject<CreateCustomerRequest, string, PhoneNumber>(p => PhoneNumber.Create(p))
+            .When(r => !string.IsNullOrWhiteSpace(r.PhoneNumber));
     }
 }

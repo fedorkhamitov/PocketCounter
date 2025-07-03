@@ -13,7 +13,7 @@ public class Order : SoftDeletableEntity
 
     public Order(
         List<CartLine> cartLines,
-        SerialNumber serialNumber,
+        //SerialNumber serialNumber,
         Address address,
         decimal totalPrice,
         string comment)
@@ -26,7 +26,7 @@ public class Order : SoftDeletableEntity
         CreateDateTime = DateTime.UtcNow;
         Comment = comment;
         TotalPrice = totalPrice;
-        SerialNumber = serialNumber;
+        //SerialNumber = serialNumber;
     }
 
     public new Guid Id { get; private set; }
@@ -35,7 +35,9 @@ public class Order : SoftDeletableEntity
 
     private readonly List<CartLine> _cartLines = [];
     
-    public SerialNumber SerialNumber { get; private set; }
+    //public SerialNumber SerialNumber { get; private set; }
+    
+    public int OrderNumber { get; private set; }
 
     public Address Address { get; private set; } = default!;
 
@@ -59,7 +61,7 @@ public class Order : SoftDeletableEntity
         TotalPrice = newTotalPrice;
         return Result.Success<Error>();
     }
-    public void SetSerialNumber(SerialNumber serialNumber) => SerialNumber = serialNumber;
+    //public void SetSerialNumber(SerialNumber serialNumber) => SerialNumber = serialNumber;
 
     public UnitResult<Error> AddCartLine(CartLine cartLine)
     {
@@ -125,5 +127,17 @@ public class Order : SoftDeletableEntity
     {
         Status = orderStatus;
         IsPaid = isPaid;
+    }
+
+    public void UpdateAddress(Address address)
+    {
+        Address = address;
+    }
+    
+    public void SetOrderNumber(int number)
+    {
+        if (number <= 0) 
+            throw new ArgumentException("Order number must be positive");
+        OrderNumber = number;
     }
 }
