@@ -8,112 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba12169-be72-4cdf-a006-1c97369073e1" name="Changes" comment="fin 3-7-25 21-20">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="dba12169-be72-4cdf-a006-1c97369073e1" name="Changes" comment="application migration from .net 9 to .net 8">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/PocketCounter.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/PocketCounter.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/PocketCounter.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/ref/PocketCounter.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/ref/PocketCounter.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/refint/PocketCounter.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/Debug/net9.0/refint/PocketCounter.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/PocketCounter.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/PocketCounter.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/PocketCounter.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/PocketCounter.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/bin/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/PocketCounter.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/ref/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/ref/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/refint/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/Debug/net9.0/refint/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/PocketCounter.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/PocketCounter.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/PocketCounter.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/PocketCounter.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/bin/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/bin/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/bin/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/bin/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/ref/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/ref/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/refint/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/Debug/net9.0/refint/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/PocketCounter.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/PocketCounter.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/PocketCounter.Infrastructure.Authentication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/PocketCounter.Infrastructure.Authentication.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/PocketCounter.Infrastructure.Authentication.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/ref/PocketCounter.Infrastructure.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/ref/PocketCounter.Infrastructure.Authentication.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/refint/PocketCounter.Infrastructure.Authentication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/Debug/net9.0/refint/PocketCounter.Infrastructure.Authentication.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/PocketCounter.Infrastructure.Authentication.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/PocketCounter.Infrastructure.Authentication.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure.Authentication/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/PocketCounter.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/PocketCounter.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/bin/Debug/net9.0/PocketCounter.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/PocketCounter.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/ref/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/ref/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/refint/PocketCounter.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/Debug/net9.0/refint/PocketCounter.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/PocketCounter.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/PocketCounter.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/PocketCounter.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +257,7 @@
       <workItem from="1750148136621" duration="9282000" />
       <workItem from="1750351943029" duration="2381000" />
       <workItem from="1750416378394" duration="5216000" />
-      <workItem from="1751559840004" duration="16520000" />
+      <workItem from="1751559840004" duration="18079000" />
     </task>
     <task id="LOCAL-00001" summary="first comit">
       <option name="closed" value="true" />
@@ -387,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751566855588</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="application migration from .net 9 to .net 8">
+      <option name="closed" value="true" />
+      <created>1751615117325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751615117326</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +320,8 @@
     <MESSAGE value="new" />
     <MESSAGE value="MANY" />
     <MESSAGE value="fin 3-7-25 21-20" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin 3-7-25 21-20" />
+    <MESSAGE value="application migration from .net 9 to .net 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="application migration from .net 9 to .net 8" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

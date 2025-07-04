@@ -16,6 +16,9 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         
+        builder.Configuration
+            .AddEnvironmentVariables();
+        
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
             .WriteTo.Console()
