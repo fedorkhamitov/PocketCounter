@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Domain\\PocketCounter.Domain.csproj": {
                 "projectPath": "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Domain\\PocketCounter.Domain.csproj"
@@ -50,8 +50,8 @@
         }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "CSharpFunctionalExtensions": {
               "target": "Package",
@@ -108,15 +108,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -132,8 +132,8 @@
         }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "CSharpFunctionalExtensions": {
               "target": "Package",
@@ -182,15 +182,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Infrastructure\\PocketCounter.Infrastructure.csproj": {
                 "projectPath": "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Infrastructure\\PocketCounter.Infrastructure.csproj"
@@ -210,18 +210,8 @@
         }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[9.0.5, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.5, )"
-            }
-          },
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -260,15 +250,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Application\\PocketCounter.Application.csproj": {
                 "projectPath": "D:\\projects\\PocketCounter\\PocketCounter.Backend\\src\\PocketCounter.Application\\PocketCounter.Application.csproj"
@@ -288,12 +278,20 @@
         }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "EFCore.NamingConventions": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",

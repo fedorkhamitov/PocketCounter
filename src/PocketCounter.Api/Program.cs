@@ -1,7 +1,5 @@
-using System.Text;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PocketCounter.Api.Extensions;
 using PocketCounter.Application;

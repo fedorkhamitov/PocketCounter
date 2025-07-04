@@ -42,5 +42,35 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="pocket_counter@timeweb" uuid="95090526-be14-4781-b02e-96094cf50a6c">
+      <database-info product="PostgreSQL" version="15.12 (Ubuntu 15.12-1.pgdg24.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="15.12" exact-driver-version="42.7">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gen_user</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="pocket_counter_auth@timeweb" uuid="3193d1d5-e25f-428c-947f-2489a6d5ec58">
+      <database-info product="PostgreSQL" version="15.12 (Ubuntu 15.12-1.pgdg24.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="15.12" exact-driver-version="42.7">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gen_user</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>
