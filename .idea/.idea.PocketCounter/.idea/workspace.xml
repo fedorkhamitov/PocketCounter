@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba12169-be72-4cdf-a006-1c97369073e1" name="Changes" comment="New Dockerfile" />
+    <list default="true" id="dba12169-be72-4cdf-a006-1c97369073e1" name="Changes" comment="delete Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PocketCounter/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +257,7 @@
       <workItem from="1750148136621" duration="9282000" />
       <workItem from="1750351943029" duration="2381000" />
       <workItem from="1750416378394" duration="5216000" />
-      <workItem from="1751559840004" duration="20795000" />
+      <workItem from="1751559840004" duration="21978000" />
     </task>
     <task id="LOCAL-00001" summary="first comit">
       <option name="closed" value="true" />
@@ -305,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751619704049</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="delete Dockerfile">
+      <option name="closed" value="true" />
+      <created>1751620142832</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751620142832</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +347,8 @@
     <MESSAGE value="application migration from .net 9 to .net 8" />
     <MESSAGE value="AddEnvironmentVariables" />
     <MESSAGE value="New Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Dockerfile" />
+    <MESSAGE value="delete Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
