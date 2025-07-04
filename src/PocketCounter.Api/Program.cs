@@ -99,10 +99,6 @@ public class Program
         app.UseAuthorization();
         app.MapControllers();
         
-        var urls = Environment.GetEnvironmentVariable("ASPNETCORE_URLS") ?? "http://0.0.0.0:8080";
-        app.Urls.Clear();
-        app.Urls.Add(urls);
-        
         app.Run();
     }
 }
