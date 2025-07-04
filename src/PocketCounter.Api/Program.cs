@@ -36,7 +36,7 @@ public class Program
         {
             options.AddPolicy("ForSpecialFrontend", cpBuilder =>
             {
-                cpBuilder.WithOrigins("http://localhost:5173")
+                cpBuilder.WithOrigins("https://fedorkhamitov.github.io/pcounter-front")
                     .AllowAnyMethod()
                     .AllowAnyHeader();
             });
